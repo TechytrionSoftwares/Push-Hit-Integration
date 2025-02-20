@@ -93,13 +93,6 @@ function bbloomer_premium_support_query_vars( $vars ) {
 }
   
 add_filter( 'query_vars', 'bbloomer_premium_support_query_vars', 0 );
-  
-// function bbloomer_add_premium_support_link_my_account( $items ) {
-//     $items['pushit-book-clip'] = 'Pushit Book Clip';
-//     return $items;
-// }
-  
-// add_filter( 'woocommerce_account_menu_items', 'bbloomer_add_premium_support_link_my_account' );
 
 function bbloomer_premium_support_content() {
     ?>
@@ -136,7 +129,6 @@ function bbloomer_premium_support_content() {
             emails: formData.get("emails") ? formData.get("emails").split(",") : [] 
         };
 
-        // console.log("Formatted Data: ", data);
 
         // AJAX call to submit the data
         $.ajax({
@@ -278,7 +270,6 @@ document.addEventListener("DOMContentLoaded", function () {
     </div>
 
     <label for="pitchId">Pitch ID</label>
-    <!-- <input type="text" id="pitchId" name="pitchId" required> -->
     <select id="pitchId" name="pitchId" required style="width: 100%; border: 1px solid #cecece; padding: 8px 6px; border-radius: 4px;">
         <option value="Slipway Court 1">Slipway Court 1</option>
         <option value="Slipway Court 2">Slipway Court 2</option>
